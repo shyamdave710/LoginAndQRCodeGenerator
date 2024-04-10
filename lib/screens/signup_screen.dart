@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:login/screens/signin_screen.dart';
 
 import '../components/UiComponents.dart';
 import '../widgets/custom_scaffold.dart';
@@ -23,7 +24,9 @@ class _signupscreenState extends State<signupscreen> {
       UserCredential? usercredential;
       try{
         usercredential= await FirebaseAuth.instance.createUserWithEmailAndPassword(email: email, password: password).then((value){
-          Navigator.push(context, MaterialPageRoute(builder: (e)=>homescreen()));
+          emailcontroller.text="";
+          passwordcontroller.text="";
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (e)=>signinscreen()));
         });
       }
       on FirebaseAuthException catch(ex){
@@ -49,7 +52,7 @@ class _signupscreenState extends State<signupscreen> {
             flex: 7,
             child: Container(
               decoration: const BoxDecoration(
-                color: Colors.white,
+                color: Color.fromRGBO(255,  255 ,   255 , 0.9),
                 borderRadius: BorderRadius.only(
                   topLeft: Radius.circular(50.0),
                   topRight: Radius.circular(50.0),

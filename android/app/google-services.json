@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1003959809745",
-    "project_id": "login-f9c17",
-    "storage_bucket": "login-f9c17.appspot.com"
+    "project_number": "933441338133",
+    "project_id": "login-dad87",
+    "storage_bucket": "login-dad87.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1003959809745:android:ed5a166fe066b38549b7f0",
+        "mobilesdk_app_id": "1:933441338133:android:8b1e3613b06d0a1157071c",
         "android_client_info": {
           "package_name": "com.example.login"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAHdf4JNpGgEErHnaZAntn-b3YOdnFhi_U"
+          "current_key": "AIzaSyBDWkIih5GeV6x5GEKC5S_j4DOj7hAb_9E"
         }
       ],
       "services": {

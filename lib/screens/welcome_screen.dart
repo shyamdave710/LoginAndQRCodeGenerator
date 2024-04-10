@@ -32,7 +32,7 @@ class welcomescreen extends StatelessWidget {
                            fontWeight: FontWeight.w900,
                          ),),
                         TextSpan(
-                          text: '\nAU is WithYou..!\nMake your self safe here..\n',
+                          text: '\nUnlocking Convenience:\n Your QR Code Solution\n',
                           style: TextStyle(
                             fontSize: 20.0,
                             fontWeight: FontWeight.bold,

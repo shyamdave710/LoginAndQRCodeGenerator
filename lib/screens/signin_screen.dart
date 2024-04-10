@@ -49,7 +49,7 @@ class _signinscreenState extends State<signinscreen> {
             flex: 7,
               child: Container(
                 decoration: const BoxDecoration(
-                  color: Colors.white,
+                  color: Color.fromRGBO(255,  255 ,   255 , 0.9),
                   borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(50.0),
                     topRight: Radius.circular(50.0),
