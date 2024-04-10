@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:login/screens/generate_qr_code.dart';
+import 'package:login/screens/scan_qr_code.dart';
 import 'package:login/widgets/custom_scaffold.dart';
 
 class homescreen extends StatefulWidget {
@@ -11,10 +13,27 @@ class homescreen extends StatefulWidget {
 
 class _homescreenState extends State<homescreen> {
   @override
+  Color color=Colors.white;
   Widget build(BuildContext context) {
-    return const CustomScaffold(
-      child:
-      Center(child: Text("Shyam Dave",style: TextStyle(fontWeight: FontWeight.w900,fontSize: 50,color: Colors.white),)),
+    return CustomScaffold(
+      child:Center(
+        child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(onPressed: (){
+                setState(() {
+                  Navigator.push(context, MaterialPageRoute(builder: (e)=> ScanQR()));
+                });
+              }, child: Text("Scan QR code"),style: ElevatedButton.styleFrom(backgroundColor: Colors.white) ,),
+              SizedBox( height: 40,),
+              ElevatedButton(onPressed: (){
+                setState(() {
+                  Navigator.push(context, MaterialPageRoute(builder: (e)=> GenerateQR()));
+                });
+                }, child: Text("Generate QR code"),style: ElevatedButton.styleFrom(backgroundColor: Colors.white) ,),
+            ],
+          ),
+      ),
     );
   }
 }

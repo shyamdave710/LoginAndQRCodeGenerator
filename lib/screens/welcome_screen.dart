@@ -14,7 +14,7 @@ class welcomescreen extends StatelessWidget {
       child:  Column(
         children: [
           Flexible(
-            flex: 8,
+            flex: 1,
             child: Container(
               padding: const EdgeInsets.symmetric(
                 vertical: 0.0,
@@ -32,10 +32,11 @@ class welcomescreen extends StatelessWidget {
                            fontWeight: FontWeight.w900,
                          ),),
                         TextSpan(
-                          text: '\nUnlocking Convenience:\n Your QR Code Solution\n',
+                          text: '\nUnlocking Convenience: \nYour QR Code Solution\n',
                           style: TextStyle(
                             fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
+                            fontWeight: FontWeight.w900,
+                            color: Color.fromRGBO(81, 23, 133, 1.0),
                           ),
                         )
                       ],

@@ -17,7 +17,7 @@ class CustomScaffold extends StatelessWidget {
       extendBodyBehindAppBar: true,
       body:Stack(
         children: [
-          Image.asset('assets/images/bg.jpg',fit: BoxFit.cover,height: double.infinity,width: double.infinity,),
+          Image.asset('assets/images/bg.jpg',fit: BoxFit.cover,height: double.infinity,width: double.infinity,opacity: const AlwaysStoppedAnimation(0.9),),
           SafeArea(child: child!,),
         ],
       ),
